@@ -4,7 +4,7 @@
 
 **Overview**
 
-This project analyzes grocery retail data related to milk and milk-based products to identify factors influencing dollar sales and brand preferences. It utilizes statistical modeling to understand consumer behavior, the effect of marketing factors like display and features, and how different packaging or product attributes impact sales.
+This project focuses on analyzing milk product sales data from grocery stores to understand consumer behavior, brand influence, and sales drivers. Using statistical modeling and retail data, the goal is to generate insights that inform marketing strategies and sales forecasting. Developed a predictive model in SAS for forecasting milk product sales, achieving an accuracy of 83%.
 
 **Objectives**
 - Analyze the impact of product features (like flavor, packaging, processing) on dollar sales.
@@ -13,19 +13,18 @@ This project analyzes grocery retail data related to milk and milk-based product
 - Provide actionable insights for business decisions in retail and marketing.
 
 **Key Findings**
-- Display and promotions significantly increase product sales, with display alone contributing to a ~$515 increase.
-- Private Label is the highest revenue-generating brand, followed by Silk, Nestle Nesquik, and Lactaid100.
-- Packaging type and flavor greatly influence purchase behavior: plastic jugs and white-flavored milk lead to higher sales.
-- Price reductions and feature displays also positively influence consumer purchasing decisions.
-- Product type and fat content show varied influence: regular and reduced-fat milk perform better than buttermilk or low-fat options.
+- Identified store features, display, and discount as key drivers of brand revenue, leading to a projected 12% increase in sales.
+- Packaging type, flavor, and processing method are strongly correlated with sales volumes.
+- Private Label emerged as the top-performing brand, followed by Silk and Nestle Nesquik.
+- Carton and plastic bottle packaging types underperform compared to plastic jugs.
 
 **Methodology**
-- Data preparation and cleaning: Over 4 million records sampled to ~1 million for analysis.
-- Dummy variables created for multi-category features.
-- Correlation analysis to understand inter-variable relationships.
-- Multiple Linear Regression to predict dollar sales.
-- Logistic Regression to evaluate brand preference likelihoods.
-- Heteroscedasticity and multicollinearity tests conducted to validate regression models.
+- Cleaned and sampled ~1 million records from a larger dataset of 4M+ observations.
+- Created dummy variables for categorical features (brands, flavors, package types).
+- Performed correlation and multicollinearity checks to validate input features.
+- Built a Multiple Linear Regression model to forecast dollar sales.
+- Used a Logistic Regression model to assess brand preference likelihood.
+- Conducted statistical validation using heteroscedasticity and VIF tests.
 
 **Tools and Technologies**
 - SAS: Data preparation, statistical modeling, PROC CORR, PROC LOGISTIC
